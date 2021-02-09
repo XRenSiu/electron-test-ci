@@ -1,0 +1,16 @@
+{
+  "name": "kind-television-settle-pvo5m",
+  "productName": "kind-television-settle-pvo5m",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "xrensiu",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "11.2.0"
+  }
+}
