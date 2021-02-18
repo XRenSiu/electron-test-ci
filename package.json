@@ -1,16 +1,20 @@
 {
-  "name": "kind-television-settle-pvo5m",
-  "productName": "kind-television-settle-pvo5m",
-  "description": "My Electron application description",
-  "keywords": [],
-  "main": "./main.js",
-  "version": "1.0.0",
-  "author": "xrensiu",
+  "name": "electron-test-ci",
+  "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
-    "start": "electron ."
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
-  "dependencies": {},
+  "dependencies": {
+    "source-map-support": "^0.5.16"
+  },
   "devDependencies": {
-    "electron": "11.2.0"
+    "electron": "8.2.0",
+    "electron-builder": "^22.4.1",
+    "electron-webpack": "^2.8.2",
+    "webpack": "~4.42.1"
   }
 }
